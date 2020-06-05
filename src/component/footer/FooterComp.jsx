@@ -7,14 +7,14 @@ return <Fragment>
           <div className="container-fluid text-md-left">
             <div className="row">
               <div className="col-md-6">
-                <h5>Tentang</h5>
+                <h4>Tentang</h4>
                 <p className="text-justify">
                   { props.about }
                 </p>
               </div>
 
               <div className="col-md-3 mb-3">
-                <h5>Sosial Media</h5>
+                <h4>Sosial Media</h4>
                 <ul className="list-unstyled">
                   <li>
                     <SocialMediaIconsReact backgroundColor="#fff" borderColor="#000" borderStyle="solid" borderWidth="2" roundness="8px" iconColor="#000"  iconSize="5" icon="facebook" iconSize="5" url={ props.facebook } /> Facebook
@@ -31,7 +31,7 @@ return <Fragment>
                 </ul>
               </div>
               <div className="col-md-3 mb-3">
-                <h5>Kontak</h5>
+                <h4>Kontak</h4>
                 <ul className="list-unstyled">
                   <li>
                   <SocialMediaIconsReact backgroundColor="#fff" borderColor="#000" borderStyle="solid" borderWidth="2" roundness="8px" iconColor="#000"  iconSize="5" icon="phone" iconSize="5"/> { props.contact }

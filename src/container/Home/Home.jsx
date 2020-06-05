@@ -64,7 +64,7 @@ class Home extends Component {
             {/* Header Component End */}
 
             {/* Jumbotron Component */}
-            <Container style={{  backgroundColor:'#fafcfc', marginTop:'50px'}} >
+            <Container fluid style={{ marginTop:'50px',padding:'0'}} >
                 <JumbotronComp/>
             </Container>
              {/* Jumbotron Component End */}
@@ -107,7 +107,7 @@ class Home extends Component {
             {/* Mush Search Component End */}
 
             {/* Footer Component */}
-            <Container fluid style={{  backgroundColor:'#fafcfc', marginTop:'20px'}}>
+            <Container className="footer" fluid style={{  backgroundColor:'#fafcfc', marginTop:'20px'}}>
                 <FooterComp
                     facebook="https://facebook.com/kamilanindita"
                 />

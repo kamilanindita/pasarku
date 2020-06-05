@@ -60,12 +60,12 @@ const ControlledCarousel = (props) => {
 
 const JumbotronComp = (props) => {
     return  <Fragment>
-              <Jumbotron  style={{ backgroundColor:'#fafcfc'}} >
+              {/* <Jumbotron  style={{ backgroundColor:'#ffff', padding:'0', margin:'0'}} >
                 <Row style={{ margin:'auto'}}>
-                  {/* Slide Besar */}
-                    <Col sm={8} style={{ margin:'auto'}}>
-                      <Row>
-                        <ControlledCarousel 
+                  {/* Slide Besar 
+                    <Col sm={12} style={{ margin:'auto'}}>
+                      <Row> */}
+                        <ControlledCarousel
                           img1='https://cf.shopee.co.id/file/3af5c59fa5e6581c15d1f45596034da2'
                           img2='https://cf.shopee.co.id/file/3af5c59fa5e6581c15d1f45596034da2'
                           img3='https://cf.shopee.co.id/file/3af5c59fa5e6581c15d1f45596034da2'
@@ -75,13 +75,13 @@ const JumbotronComp = (props) => {
                           cap1='cap1'
                           cap2='cap2'
                           cap3='cap3'
-                        />
-                      </Row>
-                    </Col>
+                         />
+                     {/* </Row>
+                    </Col> */}
                     {/* Slide Besar End */}
 
                     {/* Slide Kecil */}
-                    <Col sm={4} style={{ margin:'auto'}}>
+                    {/* <Col sm={4} style={{ margin:'auto'}}>
                         <Row>
                           <ControlledCarousel 
                             img1='https://cf.shopee.co.id/file/3af5c59fa5e6581c15d1f45596034da2'
@@ -108,10 +108,10 @@ const JumbotronComp = (props) => {
                             cap3='cap3'
                           />
                         </Row>
-                    </Col>
+                    </Col> */}
                     {/* Slide Kecil End */}
-                </Row>
-              </Jumbotron>
+                 {/* </Row>
+               </Jumbotron> */}
             </Fragment>
 }
 
