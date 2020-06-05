@@ -1,0 +1,7 @@
+.youtube-wrapper {
+    border: 1px solid gray;
+    margin: 10px;
+    display: block;
+    padding:10px;
+    width: 400px;
+}

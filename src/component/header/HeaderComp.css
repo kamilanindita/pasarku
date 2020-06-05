@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+  }
+  
+   /* Style the submit button */
+  .tombol {
+    max-height: 28px;
+    max-width: 28px;
+    float: left;
+    background: #2196F3;
+    cursor: pointer;
+  }
+  
+  .tombol:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  .tombol::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .icon-tombol {
+      margin-bottom:155px;
+      margin-left: -6px; 
+      color: #fff;
+  }
