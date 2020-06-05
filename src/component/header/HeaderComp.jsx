@@ -1,6 +1,6 @@
 import React,  { Fragment } from 'react';
 import { Row, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
-import { faHome, faShoppingCart, faUserCircle, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faShoppingCart, faUserCircle, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './HeaderComp.css'
 const HeaderComp = (props) => {
@@ -40,12 +40,12 @@ const HeaderComp = (props) => {
                 </Navbar>
                 </div>
                 <div className="d-block d-sm-none" style={{ marginBottom:'0px' }}>
-                <Navbar className="justify-content-center navbar-expand" style={{ backgroundColor:'#0aa3f0'}} fixed="bottom" >
-                    <Nav.Link  href="#home"><FontAwesomeIcon icon={faHome} size="2x"  style={{color: '#fff'}}/></Nav.Link>
+                <Navbar className="justify-content-center navbar-expand" style={{ backgroundColor:'#0aa3f0'}} fixed="bottom">
+                    <Nav.Link  href="#home"><FontAwesomeIcon icon={ faBars } size="2x"  style={{color: '#fff'}} /></Nav.Link>
                     <Form inline className="col-xs-2">
                     <FormControl type="text" placeholder="Search" style={{ maxHeight:'26px' }} className="col-xs-2"/>
                     </Form>
-                    <Button className="tombol"><FontAwesomeIcon icon={ faSearch } className="icon-tombol" /></Button>
+                    {/* <Button className="tombol"><FontAwesomeIcon icon={ faSearch } className="icon-tombol" /></Button> */}
                     <Nav.Link  href="#home"><FontAwesomeIcon icon={ faShoppingCart } size="2x" style={{color: '#fff'}}/></Nav.Link>
                     <Nav.Link  href="#home"><FontAwesomeIcon icon={ faUserCircle } size="2x" style={{color: '#fff'}}/></Nav.Link>
                 </Navbar>
