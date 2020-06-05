@@ -10,8 +10,8 @@ const ControlledCarousel = (props) => {
     }
   
     return (
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item>
+      <Carousel  activeIndex={index} onSelect={handleSelect}>
+        <Carousel.Item >
           <img
             className="d-block w-100"
             src={ props.img1 }

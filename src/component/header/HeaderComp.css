@@ -43,7 +43,7 @@
   .dropup-content {
     display: none;
     position: absolute;
-    background-color: #27a2db;
+    background-color: #0aa3f0;
     min-width: 160px;
     bottom: 50px;
     z-index: 1;
@@ -56,14 +56,14 @@
     display: block;
   }
   
-  .dropup-content a:hover {background-color: rgb(97, 192, 255)}
+  .dropup-content a:hover {background-color: rgb(118, 200, 255)}
   
   .dropup:hover .dropup-content {
     display: block;
   }
   
   .dropup:hover .dropbtn {
-    background-color: rgb(97, 192, 255);
+    background-color: rgb(118, 200, 255);
   }
 
   

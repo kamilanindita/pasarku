@@ -25,6 +25,13 @@ html {
 	}
 }
 
+.container-kategori{
+	margin-top: -50px;
+	background-color:#fafcfc;
+	position: sticky;
+}
+
+
 .prev, .next {
 	margin-top: -15px;
 	background-color:white;
@@ -97,6 +104,11 @@ html {
   }
 
   @media only screen and (max-width: 575px) {
+	.container-kategori {
+		margin-top:0px;
+		background-color: #fafcfc;
+	}
+
 	.footer{
 		margin-bottom: 55px;
 	}
