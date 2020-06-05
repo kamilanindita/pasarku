@@ -75,7 +75,7 @@ class Home extends Component {
             <hr></hr>
             <a className="prev float-left" onClick={this.scrollKategori.bind(null,-1)}><FontAwesomeIcon icon={ faAngleLeft } size="2x"  style={{ color: '#d1d1d1'}}/></a>
             <a className="next float-right" onClick={this.scrollKategori.bind(null,1)}><FontAwesomeIcon icon={ faAngleRight } size="2x"  style={{ color: '#d1d1d1'}}/></a>
-            <br></br><br></br>
+            <br></br>
             <div className="scrolling-wrapper row flex-row flex-nowrap" id="katagori-container">
                 <CategoryComp name="Fasion Pria"/>
                 <CategoryComp name="Fasion Wanita"/>
@@ -94,7 +94,7 @@ class Home extends Component {
                 <hr></hr>
                 <a className="prev float-left" onClick={this.scrollpalingDicari.bind(null,-1)}><FontAwesomeIcon icon={ faAngleLeft } size="2x"  style={{ color: '#d1d1d1'}}/></a>
                 <a className="next float-right" onClick={this.scrollpalingDicari.bind(null,1)}><FontAwesomeIcon icon={ faAngleRight } size="2x"  style={{ color: '#d1d1d1'}}/></a>
-                <br></br><br></br>
+                <br></br>
                 <div className="scrolling-wrapper row flex-row flex-nowrap" id="palingDicari-container">
                     <ContentComp name="Celana Cionis" category="Pria" price="Rp.120.000" stock="20" />
                     <ContentComp />

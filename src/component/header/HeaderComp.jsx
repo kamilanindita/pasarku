@@ -3,31 +3,28 @@ import { Row, Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-
 import { faBars, faShoppingCart, faUserCircle, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './HeaderComp.css'
+
 const HeaderComp = (props) => {
     return  (<Fragment>
                 
                 {/* Desktop Navbar */}
+                {/* style={{ backgroundColor:'#fafcfc'}} */}
                 <div className="d-none d-sm-block">
-                <Navbar style={{ backgroundColor:'#fafcfc'}} expand="lg" m="auto" fixed="top">
-                    <Navbar.Brand  href="#home">Pasarku</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar style={{ backgroundColor:'#0aa3f0'}} expand="lg" m="auto" fixed="top">
+                    <Navbar.Brand className="text-light" href="#home">Pasarku</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Profile</Nav.Link>
-                        <NavDropdown title="Produk" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link className="text-light" href="#home">Home</Nav.Link>
+                        <Nav.Link className="text-light" href="#link">Profile</Nav.Link>
+                        <Nav.Link className="text-light" href="#link">Produk</Nav.Link>
                         </Nav>
                         <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-info">Search</Button>
+                        <FormControl type="text" placeholder="Cari..." className="mr-sm-2" />
+                        <Button><FontAwesomeIcon icon={ faSearch } /></Button>
                         </Form>
-                        <FontAwesomeIcon icon={ faShoppingCart } size="2x"  style={{ margin: '5px', color: '#0aa3f0'}}/>
+                        <Nav.Link id="cart-top"  href="#home"><FontAwesomeIcon icon={ faShoppingCart } size="2x"  style={{  color: '#fff'}}/><div id="cart-item-top">{ props.cart }</div></Nav.Link>
+                        <Nav.Link id="user-top"  href="#home"><FontAwesomeIcon icon={ faUserCircle } size="2x" style={{color: '#fff'}}/><div id="username-top">{ props.username }</div></Nav.Link>
                     </Navbar.Collapse>
                 </Navbar>
                 </div>
@@ -39,20 +36,33 @@ const HeaderComp = (props) => {
                     <Navbar.Brand className="text-white"  href="#home">Pasarku</Navbar.Brand>
                 </Navbar>
                 </div>
+                
                 <div className="d-block d-sm-none" style={{ marginBottom:'0px' }}>
                 <Navbar className="justify-content-center navbar-expand" style={{ backgroundColor:'#0aa3f0'}} fixed="bottom">
-                    <Nav.Link  href="#home"><FontAwesomeIcon icon={ faBars } size="2x"  style={{color: '#fff'}} /></Nav.Link>
+                    <div className="dropup">
+                    <Nav.Link className="dropbtn"  href="#home"><FontAwesomeIcon icon={ faBars } size="2x"  style={{color: '#fff'}} /></Nav.Link>
+                    <div className="dropup-content">
+                        <a href="#">Home</a>
+                        <a href="#">Profil</a>
+                        <a href="#">Produk</a>
+                    </div>
+                    </div>
                     <Form inline className="col-xs-2">
-                    <FormControl type="text" placeholder="Search" style={{ maxHeight:'26px' }} className="col-xs-2"/>
+                    <FormControl type="text" placeholder="Cari..." style={{ maxHeight:'26px' }} className="col-xs-2"/>
                     </Form>
                     {/* <Button className="tombol"><FontAwesomeIcon icon={ faSearch } className="icon-tombol" /></Button> */}
-                    <Nav.Link  href="#home"><FontAwesomeIcon icon={ faShoppingCart } size="2x" style={{color: '#fff'}}/></Nav.Link>
-                    <Nav.Link  href="#home"><FontAwesomeIcon icon={ faUserCircle } size="2x" style={{color: '#fff'}}/></Nav.Link>
+    <Nav.Link id="cart-bottom"  href="#home"><FontAwesomeIcon icon={ faShoppingCart } size="2x" style={{color: '#fff'}}/><div id="cart-item-bottom">{ props.cart }</div></Nav.Link>
+                    <Nav.Link id="user-bottom"  href="#home"><FontAwesomeIcon icon={ faUserCircle } size="2x" style={{color: '#fff'}}/><div id="username-bottom">{ props.username }</div></Nav.Link>
                 </Navbar>
                 </div>
                 {/* Mobile Navbar End */}
 
             </Fragment>)
+}
+
+HeaderComp.defaultProps={
+    cart:'10',
+    username:'kamil'
 }
 
 export default HeaderComp;

@@ -26,6 +26,7 @@ html {
 }
 
 .prev, .next {
+	margin-top: -15px;
 	background-color:white;
   }
   
@@ -34,13 +35,11 @@ html {
   }
 
   .jumlah-item {
-	background-color: white;
-	border-radius: 100px;
+	color:#fff;
+	position: relative;
 	font-size: 16px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	margin-right:8px;
+	bottom: 60%;
   }
 
 #namaKategori {
@@ -51,10 +50,26 @@ html {
 	transform: translate(-50%, -50%);
   }
 
+#harga, #stok {
+	font-size: 12px;
+}
+
+@media only screen and (max-width: 1200px) {
+	#namaKategori {
+		font-size: 14px;
+	}
+	#harga, #stok {
+		font-size: 10px;
+	}
+
+}
 
 @media only screen and (max-width: 992px) {
 	#namaKategori {
 		font-size: 14px;
+	}
+	#harga, #stok {
+		font-size: 10px;
 	}
 
 }
@@ -63,17 +78,35 @@ html {
 @media only screen and (max-width: 768px) {
 	#namaProduk {
 		font-size: 14px;
+		margin-left: -10px;
 	}
 	#kategori {
 		font-size: 12px;
+		margin-left: -10px;
 	}
 	#harga, #stok {
-		font-size: 10px;
+		font-size: 6px;
+		margin-left: -10px;
 	}
 	#namaKategori {
 		font-size: 10px;
 	}
   }
+
+@media only screen and (max-width: 450px) {
+	#namaProduk {
+		font-size: 12px;
+	}
+	#kategori {
+		font-size: 10px;
+	}
+	#harga, #stok {
+		font-size: 7px;
+	}
+	#namaKategori {
+		font-size: 8px;
+	}
+}
 
 @media only screen and (max-width: 320px) {
 #namaProduk {
@@ -83,7 +116,7 @@ html {
 	font-size: 10px;
 }
 #harga, #stok {
-	font-size: 6px;
+	font-size: 7px;
 }
 #namaKategori {
 	font-size: 8px;

@@ -12,13 +12,13 @@ return  (<Fragment>
 				<Card.Img variant="top" src={ props.img } />
 				<Card.Body>
 					<Card.Title id="namaProduk">{ props.name }</Card.Title>
-					<Card.Subtitle className="mb-2 text-muted" id="kategori">{ props.category }</Card.Subtitle>
+					<Card.Subtitle className="xs-2 text-muted" id="kategori">{ props.category }</Card.Subtitle>
 					<Row>
 						<Col className="text-left">
-							<Card.Text className="mb-2 text-muted" id="harga">{ props.price }</Card.Text>
+							<Card.Text className="xs-2 text-muted" id="harga">{ props.price }</Card.Text>
 						</Col>
 						<Col className="text-right">
-							<Card.Text className="mb-2 text-muted" id="stok">{ props.stock }</Card.Text>
+							<Card.Text className="xs-2 text-muted" id="stok">Stok: { props.stock }</Card.Text>
 						</Col>
 					</Row>
 				</Card.Body>
@@ -29,7 +29,7 @@ return  (<Fragment>
 					</Col>
 					<Col className="text-right">
 						<FontAwesomeIcon icon={faShoppingCart} size="2x"  style={{ color: '#0aa3f0'}}/>
-						<div className="jumlah-item" style={{ color:'#0aa3f0' }}><small>1</small></div>
+						<div className="jumlah-item"><small>1</small></div>
 					</Col>
 					</Row>
 				</Card.Footer>
@@ -42,7 +42,7 @@ ContentComp.defaultProps={
 	img:'https://img1.ralali.id/mediaflex/500/assets/img/Libraries/293768_BEST-SELLER-TAS-WANITA-TAS-SEKOLAH-HOMME-FEMME-PREMIUM_XJ07TfeKTF25uE3B_1566588290.jpg',
 	name:'Title',
 	category:'Fasion Pria',
-	price:'Rp.100.000',
+	price:'Rp.1.000.000',
 	stock:'100'
 }
 
