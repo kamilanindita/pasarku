@@ -31,10 +31,24 @@ html {
 	position: sticky;
 }
 
+.container-content{
+	position: relative;
+}
 
-.prev, .next {
-	margin-top: -15px;
-	background-color:white;
+.prev{
+	left: 0%;
+	position: absolute;
+	bottom: 50%;
+}
+.next{
+	right: 0%;
+	position: absolute;
+	bottom: 50%;
+}
+
+.prev, .next {	
+	z-index: 10;
+	/* background-color:white; */
   }
   
   .prev:hover, .next:hover {

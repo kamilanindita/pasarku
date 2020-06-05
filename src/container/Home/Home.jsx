@@ -71,10 +71,9 @@ class Home extends Component {
 
              {/* Category Component */}
             <Container className="container-kategori">
+            <div className="container-content" >
             <h4>Kategori</h4>
-            <a className="prev float-left" onClick={this.scrollKategori.bind(null,-1)}><FontAwesomeIcon icon={ faAngleLeft } size="2x"  style={{ color: '#d1d1d1'}}/></a>
-            <a className="next float-right" onClick={this.scrollKategori.bind(null,1)}><FontAwesomeIcon icon={ faAngleRight } size="2x"  style={{ color: '#d1d1d1'}}/></a>
-            <br></br>
+            <buttom className="prev" onClick={this.scrollKategori.bind(null,-1)}><FontAwesomeIcon icon={ faAngleLeft } size="2x"  style={{ color: '#d1d1d1'}}/></buttom>
             <div className="scrolling-wrapper row flex-row flex-nowrap" id="katagori-container">
                 <CategoryComp name="Fasion Pria"/>
                 <CategoryComp name="Fasion Wanita"/>
@@ -84,15 +83,16 @@ class Home extends Component {
                 <CategoryComp/>
                 <CategoryComp/>
             </div>
+            <buttom className="next" onClick={this.scrollKategori.bind(null,1)}><FontAwesomeIcon icon={ faAngleRight } size="2x"  style={{ color: '#d1d1d1'}}/></buttom>
+            </div>
             </Container>
             {/* Category Component End */}
 
             {/* Mush Search Component */}
-            <Container style={{  backgroundColor:'#fafcfc', marginTop:'20px'}}>
+            <Container style={{  backgroundColor:'#fafcfc', marginTop:'20px'}} className="container-content">
                 <h4>Paling Dicari</h4>
-                <a className="prev float-left" onClick={this.scrollpalingDicari.bind(null,-1)}><FontAwesomeIcon icon={ faAngleLeft } size="2x"  style={{ color: '#d1d1d1'}}/></a>
-                <a className="next float-right" onClick={this.scrollpalingDicari.bind(null,1)}><FontAwesomeIcon icon={ faAngleRight } size="2x"  style={{ color: '#d1d1d1'}}/></a>
-                <br></br>
+                <div className="container-content" >
+                <a className="prev" onClick={this.scrollpalingDicari.bind(null,-1)}><FontAwesomeIcon icon={ faAngleLeft } size="2x"  style={{ color: '#d1d1d1'}}/></a>
                 <div className="scrolling-wrapper row flex-row flex-nowrap" id="palingDicari-container">
                     <ContentComp name="Celana Cionis" category="Pria" price="Rp.120.000" stock="20" />
                     <ContentComp />
@@ -100,6 +100,8 @@ class Home extends Component {
                     <ContentComp />
                     <ContentComp />
                     <ContentComp />
+                </div>
+                <a className="next" onClick={this.scrollpalingDicari.bind(null,1)}><FontAwesomeIcon icon={ faAngleRight } size="2x"  style={{ color: '#d1d1d1'}}/></a>
                 </div>
             </Container>
             {/* Mush Search Component End */}
