@@ -11,35 +11,38 @@ const ControlledCarousel = (props) => {
   
     return (
       <Carousel  activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item >
+        <Carousel.Item  style={{ maxHeight:'400px' }}>
           <img
-            className="d-block w-100"
+            className="w-100 img-fluid"
             src={ props.img1 }
             alt={ props.alt1 }
           />
           <Carousel.Caption>
+          <a href="#"><buttom className="btn btn-outline-light btn-sm">Detail</buttom></a>
             <p>{ props.cap1 }</p>
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item style={{ maxHeight:'400px' }}>
           <img
-            className="d-block w-100"
+            className="w-100 img-fluid"
             src={ props.img2 }
             alt={ props.alt2 }
           />
           <Carousel.Caption>
+          <a href="#"><buttom className="btn btn-outline-light  btn-sm">Detail</buttom></a>
             <p>{ props.cap2 }</p>
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item style={{ maxHeight:'400px' }}>
           <img
-            className="d-block w-100"
+            className="w-100 img-fluid"
             src={ props.img3 }
             alt={ props.alt3 }
           />
           <Carousel.Caption>
+            <a href="#"><buttom className="btn btn-outline-light  btn-sm">Detail</buttom></a>
             <p>{ props.cap3 }</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -66,9 +69,9 @@ const JumbotronComp = (props) => {
                     <Col sm={12} style={{ margin:'auto'}}>
                       <Row> */}
                         <ControlledCarousel
-                          img1='https://cf.shopee.co.id/file/3af5c59fa5e6581c15d1f45596034da2'
-                          img2='https://cf.shopee.co.id/file/3af5c59fa5e6581c15d1f45596034da2'
-                          img3='https://cf.shopee.co.id/file/3af5c59fa5e6581c15d1f45596034da2'
+                          img1='https://image.freepik.com/free-vector/new-arrival-banner-template-yellow-blue-colors_1361-1655.jpg'
+                          img2='https://image.freepik.com/free-psd/shopping-online-banner_23-2148561308.jpg'
+                          img3='https://image.freepik.com/free-psd/banner-template-design-online-shopping_23-2148537544.jpg'
                           alt1='...'
                           alt2='...'
                           alt3='...'
