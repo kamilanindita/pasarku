@@ -18,7 +18,7 @@ const ControlledCarousel = (props) => {
             alt={ props.alt1 }
           />
           <Carousel.Caption>
-          <a href="#"><buttom className="btn btn-outline-light btn-sm">Detail</buttom></a>
+          <a href="#" className="btn-jumbotron btn1-gradien">Detail</a>
             <p>{ props.cap1 }</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -30,7 +30,7 @@ const ControlledCarousel = (props) => {
             alt={ props.alt2 }
           />
           <Carousel.Caption>
-          <a href="#"><buttom className="btn btn-outline-light  btn-sm">Detail</buttom></a>
+          <a href="#" className="btn-jumbotron btn2-gradien">Detail</a>
             <p>{ props.cap2 }</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -42,7 +42,7 @@ const ControlledCarousel = (props) => {
             alt={ props.alt3 }
           />
           <Carousel.Caption>
-            <a href="#"><buttom className="btn btn-outline-light  btn-sm">Detail</buttom></a>
+            <a href="#" className="btn-jumbotron btn3-gradien">Detail</a>
             <p>{ props.cap3 }</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -70,8 +70,8 @@ const JumbotronComp = (props) => {
                       <Row> */}
                         <ControlledCarousel
                           img1='https://image.freepik.com/free-vector/new-arrival-banner-template-yellow-blue-colors_1361-1655.jpg'
-                          img2='https://image.freepik.com/free-psd/shopping-online-banner_23-2148561308.jpg'
-                          img3='https://image.freepik.com/free-psd/banner-template-design-online-shopping_23-2148537544.jpg'
+                          img2='https://image.freepik.com/free-psd/banner-template-design-online-shopping_23-2148537544.jpg'
+                          img3='https://image.freepik.com/free-psd/shopping-online-banner_23-2148561308.jpg'
                           alt1='...'
                           alt2='...'
                           alt3='...'

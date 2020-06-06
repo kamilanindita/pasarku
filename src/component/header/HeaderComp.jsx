@@ -61,7 +61,7 @@ const HeaderComp = (props) => {
 }
 
 HeaderComp.defaultProps={
-    cart:'10',
+    cart:'0',
     username:'kamil'
 }
 

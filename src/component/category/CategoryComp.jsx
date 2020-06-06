@@ -7,7 +7,7 @@ return  <Fragment>
             <Col  sm={2} xs={3}>
                 <a href={ props.url }>
                 <Card className="card card-block" >
-                <h3 id="namaKategori" className="text-center text-muted" >{ props.name }</h3>
+                <h3 id="namaKategori" className="text-center" >{ props.name }</h3>
                 <Card.Img src={ props.img} alt={ props.name } />
                 </Card>
                 </a>
