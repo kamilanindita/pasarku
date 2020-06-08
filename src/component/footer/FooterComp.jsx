@@ -1,10 +1,8 @@
 import React,  { Fragment } from 'react';
-import { Container } from 'react-bootstrap';
 import { SocialMediaIconsReact } from 'social-media-icons-react';
-import '../../component/footer/FooterComp.css'
+
 const FooterComp = (props) => {
 return <Fragment>  
-        <Container fluid className="container-footer">
         <footer className="page-footer font-small pt-4">
           <div className="container-fluid text-md-left">
             <div className="row">
@@ -49,7 +47,6 @@ return <Fragment>
             <a href="#"> KKN-PPM UGM</a>
           </div>
         </footer>
-        </Container>
         </Fragment>
 }
 

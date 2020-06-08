@@ -86,8 +86,7 @@ html {
  
   .lainnya {
 	margin-top: -30px;
-}
-
+  }
   .text-lainnya {
 	font-size: 12px;
   }
@@ -176,6 +175,12 @@ html {
 		background-color: #fafcfc;
 	}
 
+	.footer{
+		margin-bottom: 55px;
+	}
+	.footer-copyright{
+		font-size: 12px;
+	}
 }
 
 @media only screen and (max-width: 450px) {
