@@ -5,12 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 // import HelloComponent from './component/HelloComponent';
 // import StatefullComponent from './container/StatefullComponent';
-import Home from './container/Home/Home';
+//import Home from './container/Home/Home';
 
 
-
-
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 // ReactDOM.render(<StatefullComponent />, document.getElementById('root2'));
 
 // ReactDOM.render(<App />, document.getElementById('root')

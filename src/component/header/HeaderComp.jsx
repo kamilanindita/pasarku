@@ -15,9 +15,9 @@ const HeaderComp = (props) => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                        <Nav.Link className="text-light" href="#home">Home</Nav.Link>
-                        <Nav.Link className="text-light" href="#link">Profile</Nav.Link>
-                        <Nav.Link className="text-light" href="#link">Produk</Nav.Link>
+                        <Nav.Link className="text-light" href="/">Home</Nav.Link>
+                        <Nav.Link className="text-light" href="/profil">Profile</Nav.Link>
+                        <Nav.Link className="text-light" href="/produk">Produk</Nav.Link>
                         </Nav>
                         <Form inline>
                         <FormControl type="text" placeholder="Cari..." className="mr-sm-2" />
@@ -42,16 +42,16 @@ const HeaderComp = (props) => {
                     <div className="dropup">
                     <Nav.Link className="dropbtn"  href="#home"><FontAwesomeIcon icon={ faBars } size="2x"  style={{color: '#fff'}} /></Nav.Link>
                     <div className="dropup-content">
-                        <a href="#">Home</a>
-                        <a href="#">Profil</a>
-                        <a href="#">Produk</a>
+                        <a href="/">Home</a>
+                        <a href="/profil">Profil</a>
+                        <a href="/produk">Produk</a>
                     </div>
                     </div>
                     <Form inline className="col-xs-2">
                     <FormControl type="text" placeholder="Cari..." style={{ maxHeight:'26px' }} className="col-xs-2"/>
                     </Form>
                     {/* <Button className="tombol"><FontAwesomeIcon icon={ faSearch } className="icon-tombol" /></Button> */}
-    <Nav.Link id="cart-bottom"  href="#home"><FontAwesomeIcon icon={ faShoppingCart } size="2x" style={{color: '#fff'}}/><div id="cart-item-bottom">{ props.cart }</div></Nav.Link>
+                     <Nav.Link id="cart-bottom"  href="#home"><FontAwesomeIcon icon={ faShoppingCart } size="2x" style={{color: '#fff'}}/><div id="cart-item-bottom">{ props.cart }</div></Nav.Link>
                     <Nav.Link id="user-bottom"  href="#home"><FontAwesomeIcon icon={ faUserCircle } size="2x" style={{color: '#fff'}}/><div id="username-bottom">{ props.username }</div></Nav.Link>
                 </Navbar>
                 </div>
