@@ -56,7 +56,10 @@
     display: block;
   }
   
-  .dropup-content a:hover {background-color: rgb(118, 200, 255)}
+  .dropup-content a:hover {
+    text-decoration: none;
+    background-color: rgb(118, 200, 255)
+  }
   
   .dropup:hover .dropup-content {
     display: block;
@@ -64,6 +67,7 @@
   
   .dropup:hover .dropbtn {
     background-color: rgb(118, 200, 255);
+    border-radius: 4px;
   }
 
   
